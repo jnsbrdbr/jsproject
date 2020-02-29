@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    write sth: <input type="text" id="doc">
+     <br/>
+     <br/>
+     <button onclick="change()">present</button>
+     <br/>
+     <br/>
+     <h2  id="result"></h2>
+    
+</body>
+    
+    <script>
+        
+        function change(){
+        var lbl=document.getElementById("doc").value;
+        var par= document.getElementById("result");
+        par.innerHTML=lbl;
+
+        }
+    </script>
+
+
+</html>

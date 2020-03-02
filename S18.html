@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+</body>
+<script>
+    function person(name, family, age) {
+        this.name = name;
+        this.family = family;
+        this.age = age;
+    }
+    var jinu = new person("jinu", "brdbr", 28);
+    
+    var people = [];
+    people.push (new person("ana", "brdbr", 36));
+    people.push (new person("arsh", "brdbr", 38));
+    people.push (new person("fariba", "slt", 57));
+    console.log(people);
+
+    var text = "";
+    for (x in people) {
+        text =+ people[x].name + "<br/>";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+</html>

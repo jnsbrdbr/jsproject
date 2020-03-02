@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    give me a number between 5 to 10 : <input type="text" id="npt">
+    <br/>
+    <br/>
+    <button onclick="compair()">test</button>
+    <br/>
+    <br/>
+    <p id="demo"></p>
+</body>
+<script>
+    
+    function compair(){
+        var lbl,x; 
+    lbl =document.getElementById("npt").value;
+    x = document.getElementById("demo");
+    x.innerHTML="";
+    
+        try {
+
+            if ( lbl == "" ) throw "empty";
+            if (isNaN(lbl))  throw "not a number";
+
+            lbl=Number(lbl);
+
+            if (lbl<5) throw "too low";
+            if (lbl>10) throw "too high";
+        }
+        catch(err){
+            x.innerHTML="input is "+err;
+            }
+            finally
+      {
+        document.getElementById("npt").value = "";
+      }
+    }
+    
+</script>
+</html>

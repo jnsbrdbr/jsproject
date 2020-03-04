@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elem">
+        <p id="firstp">hi thisis first paragtaph.</p>
+        <p id="secondp">this is second paragragh.</p>
+        </p>  
+    </div>
+</body>
+<script>
+    var doc =document.createElement("p");
+    var node =document.createTextNode("this paragragh is made by js");
+    doc.appendChild(node);
+    var element=document.getElementById("elem");
+    element.appendChild(doc);
+</script>
+</html>

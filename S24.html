@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">what s going on...</button>
+    <p id="wtp"></p>
+</body>
+<script>
+var x=document.getElementById("btn");
+x.addEventListener("mouseover",mover);
+x.addEventListener("mouseup",mup);
+x.addEventListener("mousedown",mdown);
+function mover(){
+    var elem =document.getElementById("wtp");
+    elem.innerHTML+="sign is over the buttn <br/>";
+}
+function mup(){
+    var elem =document.getElementById("wtp");
+    elem.innerHTML+="you release the button <br/>";
+}
+function mdown(){
+    var elem =document.getElementById("wtp");
+    elem.innerHTML+="you push the button <br/>";
+}
+
+
+</script>
+</html>

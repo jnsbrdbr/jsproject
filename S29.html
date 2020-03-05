@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myfunc()">try it</button>
+    <br/>
+    <br/>
+    <button onclick="myfun()">try it</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</body>
+<script>
+    var txt = "";
+
+    function myfunc() {
+        if (confirm('press button')) {
+            txt = "you press ok!"
+
+        } else {
+            txt = "you press cancle!"
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }//firs project
+
+    function myfun(){
+        var txt="";
+        var person=prompt("please enter your name:","YOUR NAME");
+        if (person==null||person==""){txt="you enter nothing!"}
+            else
+            {txt=" HELLO "+person;}
+            document.getElementById("demo1").innerHTML=txt;
+
+    }//second project
+</script>
+
+</html>

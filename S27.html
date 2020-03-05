@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <button onclick="myfunc()"> click </button>
+</body>
+<script>
+    var w= window.innerWidth||
+    document.documentElement.clientWidth||
+    document.body.clientWidth;
+    var h= window.innerHeight||
+    document.documentElement.clientHeight||
+    document.body.clientHeight;
+    document.getElementById("demo").innerHTML= "the width is:"+ w + " the height is:"+ h;//first project
+    document.getElementById("demo1").innerHTML = screen.availWidth;//scond project
+    document.getElementById("demo2").innerHTML = window.location.protocol;
+    function myfunc(){
+        window.location.assign("https://google.com");
+    }
+</script>
+</html>
